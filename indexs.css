@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.footer-parent{
+    display: flex;
+    justify-content: space-evenly;
+     
+
+}
+
+.footer-parent div{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    color:white;
+    font-size: 35px;
+
+}
+.footer-parent div a{
+    padding: 4px;
+}
+
+footer{
+    padding-bottom: 70px;
+    padding-top: 100px;
+    background-color: black;
+    margin-top: 200px;
+
+}
+ a{
+    color:white;
+    font-size: 20px;
+ }   
+
+
+
+ .parent-div-line{
+        margin-top: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-line{
+        width: 82%;
+        height: 1px;
+        background-color: beige;
+    }
+
+.parent-animation{
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.child-animation{
+    padding: 10px 30px 10px 30px;
+    display: inline-block;
+    box-shadow: 0px 0px 30px 5px rgb(114, 111, 178);
+}
+
+.parent-key-frame{
+    display:flex;
+    justify-content: space-between;
+}    
+
+
+.child-key-frame{
+    margin: 100px;
+    position: relative;
+    width: 150px;
+    height: 70px;
+    background-color: yellow;
+    color:aqua;
+    animation: mymove 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.child-key-frame-2{
+    margin-top: 100px ;
+    position: relative;
+    width: 150px;
+    height:70px;
+    background-color: rebeccapurple;
+    color: blue;
+    animation: mymove2 2s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes mymove {
+    0%{
+        left: 0;
+    }
+    50%{
+        color:antiquewhite;
+        background-color: aqua;
+        left: 350px;
+        rotate: 180deg;
+        font-size: 25px;
+
+    
+    
+    
+    }
+    100%{
+        font-size: 25px;
+        color:bisque;
+        background-color: blueviolet;
+        left: 700px;
+        rotate: -360deg;
+
+    }
+  
+}
+
+
+@keyframes mymove2 {
+    0%{
+        right: 0;
+    }
+    50%{
+        color:antiquewhite;
+        background-color: red;
+        right: 350px;
+        rotate: -180deg;
+        font-size: 25px;
+
+    
+    
+    
+    }
+    100%{
+        font-size: 25px;
+        color:bisque;
+        background-color: blueviolet;
+        right: 700px;
+        rotate: 360dag;
+
+    }
+  
+}
